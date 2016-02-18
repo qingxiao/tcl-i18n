@@ -5,4 +5,5 @@ node_js:
   - "0.12"
 deploy:
   provider: npm
-  api_key: 7c2960a4-5eb3-43ed-ba62-78a264117cad
+  api_key: "7c2960a4-5eb3-43ed-ba62-78a264117cad"
+  email: "350932784@163.com"
