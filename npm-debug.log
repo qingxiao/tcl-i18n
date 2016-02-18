@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   'beta' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'e:\\work\\tcl-i18n',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\qing.xiao\AppData\Roaming\npm-cache\tcl-i18n2\1.0.0\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\qing.xiao\\AppData\\Roaming\\npm-cache\\tcl-i18n2\\1.0.0\\package.tgz',
+9 verbose tar pack   'e:\\work\\tcl-i18n' ]
+10 verbose tarball C:\Users\qing.xiao\AppData\Roaming\npm-cache\tcl-i18n2\1.0.0\package.tgz
+11 verbose folder e:\work\tcl-i18n
+12 info prepublish tcl-i18n2@1.0.0
+13 verbose addLocalTarball adding from inside cache C:\Users\qing.xiao\AppData\Roaming\npm-cache\tcl-i18n2\1.0.0\package.tgz
+14 silly cache afterAdd tcl-i18n2@1.0.0
+15 verbose afterAdd C:\Users\qing.xiao\AppData\Roaming\npm-cache\tcl-i18n2\1.0.0\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\qing.xiao\AppData\Roaming\npm-cache\tcl-i18n2\1.0.0\package\package.json written
+17 silly publish { name: 'tcl-i18n2',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'tcl i18n2',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   author: { name: 'qing.xiao' },
+17 silly publish   license: 'ISC',
+17 silly publish   dependencies:
+17 silly publish    { 'escape-string-regexp': '^1.0.4',
+17 silly publish      underscore: '^1.8.3',
+17 silly publish      xlsx: '^0.8.0' },
+17 silly publish   readme: '将Excel文件转换成java国际化标准文件：message_language.properties\n\n注意：\n\n1. 语言缩写对照表使用：<http://confluence.lab.tclclouds.com/pages/viewpage.action?pageId=2853889>\n2. 如果需要合并多个翻译文件，把新的翻译文件作为新的Sheet放到旧的翻译文件中  \n\n    如：  \n    \n    Excel_1.xlsx-Sheet1  \n    Excel_2.xlsx-Sheet1  \n     -> Excel_1.xlsx-[Sheet1, Excel_2.xlsx-Sheet1] \n        \n使用方式：\n\n    var i18n = require(\'i18n\');\n    var config = {\n        //excel表格文件\n        file:\'./xlsx/file.xlsx\',\n        //str, arr, function 需要处理的Sheet名称，为空默认全部Sheet，后面的覆盖前的内容\n        sheetName:[\'Sheet1\',\'Sheet2\'], \n        //object, function\n        output:{\n            //文件输出目录\n            filePath:\'./i18n\',\n            //文件扩展名，properties|json\n            fileType:\'properties\',\n            //str, function 文件名，language默认使用下划线，可传function返回文件名\n            fileName:\'message_{language}\',\n            //fileName:function(lan){return \'message_\'+lan.toLowerCase();}\n            //TODO value中一些特殊文本替换\n            replace:[{\n                 from:\'&#10;\',\n                 to:\'\\n\'\n            }]\n            //replace:function(context){return context.replace(/xxx/g, \'yyy\')}\n        }\n        //output:function(json){console.log(json);}\n    };\n    i18n.parse(config);\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '7808c305ad17961c1bf035aa3c704d4b71925b21',
+17 silly publish   _id: 'tcl-i18n2@1.0.0',
+17 silly publish   _shasum: '03a609a1f43d278e5e6aeacfca48da117798b96b',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name tcl-i18n2
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npm.taobao.org/
+22 silly mapToRegistry uri https://registry.npm.taobao.org/tcl-i18n2
+23 verbose publish registryBase https://registry.npm.taobao.org/
+24 silly publish uploading C:\Users\qing.xiao\AppData\Roaming\npm-cache\tcl-i18n2\1.0.0\package.tgz
+25 verbose stack Error: auth required for publishing
+25 verbose stack     at CachingRegistryClient.publish (c:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
+25 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\publish.js:134:14
+25 verbose stack     at mapToRegistry (c:\Program Files\nodejs\node_modules\npm\lib\utils\map-to-registry.js:55:3)
+25 verbose stack     at publish_ (c:\Program Files\nodejs\node_modules\npm\lib\publish.js:104:3)
+25 verbose stack     at Array.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+25 verbose stack     at LOOP (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+25 verbose stack     at LOOP (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+25 verbose stack     at chain (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+25 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
+25 verbose stack     at RES (c:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+26 verbose cwd e:\work\tcl-i18n
+27 error Windows_NT 6.1.7601
+28 error argv "c:\\Program Files\\nodejs\\\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish" "--tag" "beta"
+29 error node v0.12.7
+30 error npm  v2.11.3
+31 error code ENEEDAUTH
+32 error need auth auth required for publishing
+32 error need auth You need to authorize this machine using `npm adduser`
+33 verbose exit [ 1, true ]
