@@ -1,0 +1,5 @@
+{
+    "validateGitTag":   false,
+    "validateBranch":   "master",
+    "tag":              "beta"
+}
