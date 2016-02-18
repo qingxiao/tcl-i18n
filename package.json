@@ -1,10 +1,10 @@
 {
   "name": "tcl-i18n2",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "tcl i18n2",
   "main": "index.js",
   "scripts": {
- 
+
   },
   "author": "qing.xiao",
   "license": "ISC",

@@ -31,10 +31,15 @@
             //TODO value中一些特殊文本替换
             replace:[{
                  from:'&#10;',
-                 to:'\n'
+                 to:'\\n'
             }]
             //replace:function(context){return context.replace(/xxx/g, 'yyy')}
         }
         //output:function(json){console.log(json);}
     };
     i18n.parse(config);
+    
+Demo：
+    npm insall tcl-i18n2 后有个demo目录，cd到该目录执行
+
+    node demo.js
