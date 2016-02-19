@@ -1,6 +1,6 @@
 {
   "name": "tcl-i18n2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "tcl i18n2",
   "main": "index.js",
   "scripts": {

@@ -1,3 +1,5 @@
+#tcl-i18n2[![Build Status](https://travis-ci.org/qingxiao/tcl-i18n.svg?branch=master)](https://travis-ci.org/qingxiao/tcl-i18n)
+
 将Excel文件转换成java国际化标准文件：message_language.properties
 
 注意：
@@ -13,7 +15,7 @@
         
 使用方式：
 
-    var i18n = require('i18n');
+    var i18n = require('tcl-i18n2');
     var config = {
         //excel表格文件
         file:'./xlsx/file.xlsx',
