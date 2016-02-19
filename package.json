@@ -6,6 +6,10 @@
   "scripts": {
 
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TCL-MIE-CD/fis3-command-i18n"
+  },
   "author": "qing.xiao",
   "license": "ISC",
   "dependencies": {
