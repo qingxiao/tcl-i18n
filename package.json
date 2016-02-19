@@ -1,6 +1,6 @@
 {
   "name": "tcl-i18n2",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "tcl i18n2",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TCL-MIE-CD/fis3-command-i18n"
+    "url": "https://github.com/qingxiao/tcl-i18n"
   },
   "author": "qing.xiao",
   "license": "ISC",
